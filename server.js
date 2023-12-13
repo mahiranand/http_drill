@@ -61,7 +61,7 @@ const server = http.createServer((req, res) => {
         res.write("This will come after some delay");
         res.end();
       }, url[2] * 1000);
-    } else{
+    } else {
       res.writeHead(404);
       res.write("Page Not Found");
       res.end();
